@@ -1,0 +1,29 @@
+.header {
+	height: 270px;
+	position: relative;
+}
+
+.bg_color-header {
+	background-color: var(--accent);
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	filter: opacity(50%);
+}
+
+.bg-header {
+	background-image: url("../images/image-header-mobile.jpg");
+	background-position: left top;
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	height: 100%;
+	width: 100%;
+}
+
+.bg-header, .bg_color-header {
+	border-radius: 15px 15px 0 0;
+}
