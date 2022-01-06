@@ -5,22 +5,59 @@
 	--main-heading-stats: hsl(0, 0%, 100%);
 	--main-paragraph: hsla(0, 0%, 100%, 0.75);
 	--stat-headings: hsla(0, 0%, 100%, 0.6);
+	--font-inter: 'Inter', sans-serif;
+	--font-lexend_deca: 'Lexend Deca', sans-serif;
 }
 
-body {
-	font-family: 'Inter', sans-serif;
-	font-family: 'Lexend Deca', sans-serif;
+.body {
+	font-family: var(--font-inter);
 
 	background-color: var(--main-bg);
-	width: 90%;
-	margin: 3rem auto;
 }
 
 .main {
 	background-color: var(--card-bg);
-	border-radius: 15px;
+	border-radius: 8px;
 }
 
-p, h1, span {
+.container {
+	display: flex;
+	flex-flow: column;
+}
+
+h1 {
+	color: var(--main-heading-stats);
+	line-height: 1.1;
+}
+
+.accent {
+	color: var(--accent);
+}
+
+.paragraph {
 	color: var(--main-paragraph);
+	line-height: 1.5;
+}
+
+.data {
+	color: var(--stat-headings);
+	display: block;
+}
+
+.data:nth-child(odd) {
+	color: var(--main-heading-stats);
+	font-size: 1.8rem;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.data:nth-child(even) {
+	color: var(--stat-headings);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.container_datas {
+	display: flex;
+	gap: 2rem;
 }
